@@ -1,0 +1,10 @@
+services:
+  db:
+    ports:
+      - "8081:5432"
+    environment:
+      POSTGRES_DB: celsia
+      POSTGRES_PASSWORD: celsia
+      POSTGRES_USER: celsia
+    image: postgres
+    restart: always
